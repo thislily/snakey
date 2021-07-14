@@ -1,0 +1,125 @@
+/*
+font-family: 'Delius', cursive;
+font-family: 'Lilita One', cursive;
+*/
+
+body {
+    background-image: url(grass.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Delius', cursive;
+    font-size: 6rem;
+    margin:  25px auto;
+    display: flex;
+    justify-content: center;
+    color: hsl(47, 96%, 50%);
+    -webkit-text-fill-color: hsl(47, 96%, 50%); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: hsl(11, 100%, 54%);    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.grid{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    margin: 0;
+    background-color: white;
+
+}
+
+.grid div {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid hsla(0, 0%, 0%, 0.041);
+}
+
+.score {
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: 'Lilita One', cursive;
+    color: hsl(47, 96%, 50%);
+    -webkit-text-fill-color: hsl(47, 96%, 50%); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: hsl(0, 0%, 0%);
+}
+
+span{
+    padding: 0 0 0 10px;
+}
+
+.snake{
+    background-color: hsl(150, 60%, 50%);
+    background-image: url(snake2.jpg);
+    background-position: center;
+    background-size: contain;
+    border-radius: 15px;
+    border: none;
+}
+
+.apple{
+    background-color: hsl(0, 60%, 50%);
+    background-image: url(apple.jpg);
+    background-position: center;
+    background-size: contain;
+    border-radius: 0px;
+
+}
+
+button {
+    display: flex;
+    margin: 10px auto;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Lilita One', cursive;
+}
+
+.instructions{
+    display: flex;
+    margin: 15px;
+    background-color: white;
+    font-family: 'Lilita One', cursive;
+    flex-direction: column;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px 15px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-family: 'Lilita One', cursive;
+    color: black;
+    -webkit-text-fill-color: hsl(47, 96%, 50%); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: hsl(0, 0%, 0%);
+    margin: 0px;
+}
+
+li {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 0px;
+}
